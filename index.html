@@ -365,11 +365,42 @@
     <!-- ------------------------------------------------------modalka-------------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="mdl-close-btn" data-modal-close>
-          <svg class="" width="18" height="18">
-            <use href="./images/icons.svg#icon-close-btn-icn"></use>
-          </svg>
-        </button>
+        <form class="form">
+          <p class="text-title-modal">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-box">
+            <div class="form-field">
+              <label for="user-name" class="form-label">Имя</label>
+              <input type="text" name="user-name" id="user-name" />
+            </div>
+            <div class="form-field">
+              <label for="tel" class="form-label">Телефон</label>
+              <input type="tel" name="user-name" id="tel" />
+            </div>
+            <div class="form-field">
+              <label for="email" class="form-label">Почта</label>
+              <input type="email" name="user-name" id="email" />
+            </div>
+            <div class="form-field">
+              <label for="text" class="form-label">Комментарий</label>
+              <textarea name="" id="text" cols="" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+          </div>
+          <div class="box-text-agree">
+            <input class="checkbox" type="checkbox" name="zhoda" id="okay" value="okay" />
+            <label for="okay" class="text-agree">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="form-link-agree"> Условия договора</a></label
+            >
+          </div>
+
+          <button type="submit" class="mdl-enter-btn">Отправить</button>
+
+          <button type="button" class="mdl-close-btn" data-modal-close>
+            <svg class="" width="18" height="18">
+              <use href="./images/icons.svg#icon-close-btn-icn"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
     <!----------------------------footer----------------- -->
