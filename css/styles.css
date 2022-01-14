@@ -605,9 +605,7 @@ textarea {
   flex-direction: column;
   margin-bottom: 10px;
 }
-.checkbox {
-  background-color: yellow;
-}
+
 .mdl-enter-btn {
   width: 200px;
   height: 50px;
