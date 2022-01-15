@@ -371,6 +371,9 @@
             <div class="form-field">
               <label for="user-name" class="form-label">Имя</label>
               <input type="text" name="user-name" id="user-name" />
+              <svg class="form-pic" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope-hover-1"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label for="tel" class="form-label">Телефон</label>
@@ -386,7 +389,8 @@
             </div>
           </div>
           <div class="box-text-agree">
-            <input class="checkbox" type="checkbox" name="zhoda" id="okay" value="okay" />
+            <input class="checkbox-input" type="checkbox" name="zhoda" id="okay" value="okay" />
+
             <label for="okay" class="text-agree">
               Соглашаюсь с рассылкой и принимаю
               <a href="" class="form-link-agree"> Условия договора</a></label
@@ -464,6 +468,21 @@
             </li>
           </ul>
         </div>
+
+        <form class="email-input">
+          <h3 class="footer-email-text">Подпишитесь на рассылку</h3>
+          <div class="footer-input-div">
+            <input type="email" placeholder="E-mail" />
+            <button type="submit" class="footer-enter-btn">
+              Подписаться
+              <div class="box-send">
+                <svg class="send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send-1"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

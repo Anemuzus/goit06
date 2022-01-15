@@ -245,6 +245,8 @@ textarea {
   line-height: 1.87;
   letter-spacing: 0.06em;
   transition-property: background-color;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
 }
 .button:hover {
   background-color: #188ce8;
@@ -592,7 +594,13 @@ textarea {
 .box-text-agree {
   margin-top: 20px;
   text-align: center;
+  position: relative;
 }
+.box-text-agree input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+}
+
 .form {
   padding: 40px;
 }
@@ -604,6 +612,33 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
+}
+.form-field input {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+textarea[id='text']::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-pic {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
 }
 
 .mdl-enter-btn {
@@ -622,6 +657,9 @@ textarea {
   display: block;
   margin: 30px auto;
   margin-bottom: 0;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+  transition-property: background-color;
 }
 .mdl-enter-btn:hover {
   background-color: #188ce8;
@@ -767,4 +805,62 @@ textarea {
   border-color: #ececec;
   border-width: 1px;
   padding: 20px 24px 20px 24px;
+}
+/* ------------------------------------------footer-form-email------------------ */
+
+.email-input {
+  margin-left: auto;
+}
+.footer-email-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bgc-text-hero);
+  margin-bottom: 20px;
+}
+.footer-input-div {
+  display: flex;
+}
+.footer-input-div input {
+  width: 358px;
+  height: 50px;
+  background-color: var(--hero-bgc);
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-enter-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  color: var(--bgc-text-hero);
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition-property: background-color;
+  display: block;
+  margin: 30px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+  transition-property: background-color;
+  margin-left: 15px;
+  display: flex;
+}
+.footer-enter-btn:hover {
+  background-color: #188ce8;
+}
+.send {
+  margin-left: 10px;
+}
+.box-send {
 }
