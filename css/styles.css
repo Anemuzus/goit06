@@ -597,6 +597,7 @@ textarea {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--benefits);
+  justify-content: center;
 }
 .box-text-agree {
   margin-top: 20px;
@@ -713,7 +714,14 @@ textarea[id='text']::placeholder {
 }
 
 .checkbox-input {
-  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .custom-checkboxx {
@@ -727,10 +735,11 @@ textarea[id='text']::placeholder {
 }
 .checkbox-input:checked + .custom-checkboxx {
   background-color: var(--accent-color);
-  border-color: transparent;
+  border-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 /* /------------------------------------PORTFOLIO-------------------------- */
@@ -930,6 +939,4 @@ textarea[id='text']::placeholder {
 }
 .send {
   margin-left: 10px;
-}
-.box-send {
 }
