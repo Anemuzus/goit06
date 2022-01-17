@@ -7,7 +7,7 @@
   --zaholovokh2: #212121;
   --bcg-comand-and-button-filter: #f5f4fa;
   --icon-color: #afb1b8;
-  --transition-d: 1250ms;
+  --transition-d: 250ms;
   --transition-t: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -727,6 +727,10 @@ textarea[id='text']::placeholder {
 }
 .checkbox-input:checked + .custom-checkboxx {
   background-color: var(--accent-color);
+  border-color: transparent;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 
 /* /------------------------------------PORTFOLIO-------------------------- */
